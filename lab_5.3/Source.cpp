@@ -13,13 +13,14 @@ int main()
 	double q = qp;
 	while (q <= qk)
 	{
-		z = p(2 * q + 1) + pow(p(q * q - 1), 2) + sqrt(p(1));;
+		z = p(2 * q + 1) + pow(p(q * q - 1), 2) + sqrt(p(1));
 
 		cout << q << " " << z << endl;
 		q += dq;
 	}
 	return 0;
 }
+
 double p(const double x)
 {
 	if (abs(x) >= 1)
